@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Спорткомплекс-Нептун</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,19 +16,19 @@
 		<div class="row-menu">
 			<div class="container container-menu">
 				<div class="header__menu menu">
-					<ul class="menu__dropdown dropdown">
-						<li class="dropdown__item"><a class="dropdown__item-link" href="#">О клубе</a></li>
-						<li class="dropdown__item"><a class="dropdown__item-link" href="#">Клубные карты</a></li>
-						<li class="dropdown__item"><a class="dropdown__item-link" href="#">Расписанеи</a></li>
-						<li class="dropdown__item"><a class="dropdown__item-link" href="#">Новости</a></li>
-						<li class="dropdown__item"><a class="dropdown__item-link" href="#">Акции</a></li>
-						<li class="dropdown__item"><a class="dropdown__item-link" href="#">Контакты</a></li>
-					</ul>
-					<div class="menu__burger burger">
-						<a href="#" class="burger__inner">
-							<span class="burger__inner-item"></span>меню
-						</a>
-					</div>
+					<nav class="menu-nav">
+						<ul class="menu__dropdown dropdown">
+							<li class="dropdown__item"><a class="dropdown__item-link" href="#">О клубе</a></li>
+							<li class="dropdown__item"><a class="dropdown__item-link" href="#">Клубные карты</a></li>
+							<li class="dropdown__item"><a class="dropdown__item-link" href="#">Расписанеи</a></li>
+							<li class="dropdown__item"><a class="dropdown__item-link" href="#">Новости</a></li>
+							<li class="dropdown__item"><a class="dropdown__item-link" href="#">Акции</a></li>
+							<li class="dropdown__item"><a class="dropdown__item-link" href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<a href="#" class="burger">
+						<span class="burger__inner"></span>меню
+					</a>
 				</div>
 				<div class="header_vk vk">
 					<a href="#" class="vk__link" target="_blank">ВКонтакте</a>
@@ -80,7 +81,9 @@
 
 
 
-	
-
+		
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
