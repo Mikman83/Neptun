@@ -1,5 +1,9 @@
 
 
+* {
+	box-sizing: border-box;
+}
+
 body {	
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
@@ -11,11 +15,12 @@ body {
 
 .container-menu {
 	display: flex;
+	padding-top: 10px;
 }
 
 .row-menu {
 	background-color: #efefef;
-	height: 16px;
+	height: 35px;
 }
 
 .header__menu {
@@ -41,8 +46,9 @@ body {
 }
 
 .menu__dropdown {
-	padding: 20px 0px 15px 55px;
+	padding: 35px 0px 15px 55px;
 	list-style: none;
+	line-height: 25px;
 }
 
 .dropdown__item-link {
@@ -95,13 +101,11 @@ body {
 }
 
 .burger_active .burger__inner:before {
-	transform: rotate(35deg);
-	/*height: 24px;*/
+	transform: rotate(45deg);
 }
 
 .burger_active .burger__inner::after {
-	transform: rotate(-35deg);
-	/*height: 24px;*/
+	transform: rotate(-45deg);
 }
 
 .burger_active .burger__inner {
@@ -111,13 +115,110 @@ body {
 .header_vk {
 	width: 50%;
 	text-align: right;
+	z-index: 1;
 }
 
 .vk__link {
+	position: relative;
 	text-decoration: none;
 	color: #6b737a;
 	font-size: 13px;
 	vertical-align: super;
+}
+
+.vk__link:hover {
+	color: #0269b7;
+	text-decoration: underline;
+}
+
+.vk__link:before {
+	content: '';
+	background-image: url(../img/vk-icon.png);
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	top: -3px;
+	left: -32px;
+}
+
+.container-contacts {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.4;
+}
+
+.contacts__logo {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-right: 10px;
+}
+
+.logo-header {
+}
+
+.logo-header-item {
+	display: block;
+	max-width: 100%;
+}
+
+.club-plan {
+	margin-top: 30px;
+}
+
+.club-plan-item {
+	position: relative;
+	text-decoration: none;
+	color: #6b737a;
+	padding-left: 35px;
+	font-size: 13px;
+}
+
+.club-plan-item:before {
+	content: '';
+	position: absolute;
+	background-image: url(../img/plan.png);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 29px;
+	left: 0px;
+	top: -5px;
+}
+
+.club-plan-item:hover {	
+	color: #0269b7;
+	text-decoration: underline;
+}
+
+.contacts__adress {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 10px;
+}
+
+.contacts__tel {
+}
+
+.contacts__tel-item {
+  display: block;
+  font-size: 15px;
+  color: #3c3c3b;
+  font-weight: bold;
+  text-decoration: none;	
+}
+
+.contacts__adress-item {
+	font-size: 13px;
+	color: #6b737a;
+	margin-top: 20px;
+}
+
+.btn-container {
+	width: 50%;
 }
 
 
