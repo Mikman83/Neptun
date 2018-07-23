@@ -43,6 +43,7 @@ body {
 .menu-nav-active {
 	transform: scaleY(1);
 	opacity: 1;	
+	z-index: 1;
 }
 
 .menu__dropdown {
@@ -100,6 +101,10 @@ body {
 	top: 0;
 }
 
+.burger_active {
+	z-index: 1;
+}
+
 .burger_active .burger__inner:before {
 	transform: rotate(45deg);
 }
@@ -115,7 +120,7 @@ body {
 .header_vk {
 	width: 50%;
 	text-align: right;
-	z-index: 1;
+	z-index: 2;
 }
 
 .vk__link {
